@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    date (3.3.3)
     diff-lcs (1.5.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -13,12 +14,17 @@ GEM
     netrc (0.11.0)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
+    open-uri (0.3.0)
+      stringio
+      time
+      uri
     racc (1.6.2)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rexml (3.2.5)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
@@ -32,17 +38,29 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
+    rubyzip (2.3.2)
+    selenium-webdriver (4.8.6)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2, < 3.0)
+      websocket (~> 1.0)
+    stringio (3.0.6)
+    time (0.2.2)
+      date
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    uri (0.12.1)
+    websocket (1.2.9)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   nokogiri
+  open-uri
   rest-client
   rspec
+  selenium-webdriver
 
 RUBY VERSION
    ruby 3.0.0p0
